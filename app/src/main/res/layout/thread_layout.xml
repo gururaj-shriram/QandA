@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <TextView
+        android:id="@+id/thread_title"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/thread_title_size"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:paddingRight="@dimen/thread_layout_padding" />
+    <ImageButton
+        android:id="@+id/upvote_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_thumb_up_white"
+        android:clickable="true"
+        android:focusable="false"
+        android:paddingLeft="@dimen/thread_layout_padding"/>
+    <TextView
+        android:id="@+id/num_votes"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textSize="@dimen/thread_title_size"
+        android:textAlignment="center"
+        android:paddingLeft="@dimen/thread_layout_padding"/>
+</LinearLayout>

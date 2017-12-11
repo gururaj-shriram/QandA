@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Q and A</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="action_new_thread">New Question</string>
+    <string name="cancel_button_label">Cancel</string>
+    <string name="post_button_label">Post</string>
+    <string name="user_prompt_label">What do you want to know?</string>
+    <string name="post_question_label">Post a Question!</string>
+    <string name="send_button_label">Send</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="anonymous_uid">UserId</string>
+</resources>

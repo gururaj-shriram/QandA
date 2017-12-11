@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cancel_button"
+        android:title="@string/cancel_button_label"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/post_button"
+        android:title="@string/post_button_label"
+        app:showAsAction="ifRoom"/>
+</menu>

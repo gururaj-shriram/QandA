@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "691804683562",
+    "firebase_url": "https://q-and-a-app.firebaseio.com",
+    "project_id": "q-and-a-app",
+    "storage_bucket": "q-and-a-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691804683562:android:7241c552013bd0fa",
+        "android_client_info": {
+          "package_name": "com.gururaj.qanda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691804683562-a1v7rg4io4vjlred8auqdir62pie23q1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gururaj.qanda",
+            "certificate_hash": "7e3eed205ab1ae649ae9e292218c4eb8f2f7b7db"
+          }
+        },
+        {
+          "client_id": "691804683562-d3jt1shs386k3v5fr5lt1k6t5r1cpngp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkHVtKpC1uJN0cY5VSSBzL3jEzivZFBnE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691804683562-d3jt1shs386k3v5fr5lt1k6t5r1cpngp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

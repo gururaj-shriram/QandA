@@ -178,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
             protected void populateView(View v, Post model) {
                 ImageButton upvoteButton = ((ImageButton) v.findViewById(R.id.upvote_button));
                 ((TextView) v.findViewById(R.id.thread_title)).setText(model.getTitle());
+                ((TextView) v.findViewById(R.id.thread_title)).setMaxLines(2);
                 ((TextView) v.findViewById(R.id.num_votes))
                         .setText(String.valueOf(model.getLikesCount()));
 

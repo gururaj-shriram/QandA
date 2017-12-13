@@ -14,7 +14,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="@dimen/thread_title_size"
-        android:maxLines="2"
         android:ellipsize="end"
         android:paddingRight="@dimen/thread_layout_padding" />
     <ImageButton

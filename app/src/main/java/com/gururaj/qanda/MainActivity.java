@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
                                     users = new ArrayList<>();
                                 }
 
-                                if (model.getLikes().containsKey(mUserId)) {
+                                if (model.getLikes().containsKey(mUserId) && !users.contains(mUserId)) {
                                     users.add(mUserId);
                                 }
 

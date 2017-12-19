@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,6 +29,7 @@ import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
@@ -265,6 +268,12 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     // user signed out
                     onSignedOutCleanup();
+                    if (!isNetworkAvailable()) {
+                        Toast.makeText(getApplicationContext(), "Please establish internet " +
+                                "connectivity to login to Q&A.", Toast.LENGTH_LONG).show();
+                        finish();
+                    }
+
                     startActivityForResult(
                             AuthUI.getInstance()
                                     .createSignInIntentBuilder()
@@ -651,6 +660,13 @@ public class MainActivity extends AppCompatActivity {
             mHandler.postDelayed(onRequestLocation, DateUtils.MINUTE_IN_MILLIS * 10);
         }
     };
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
 
     private void startGeoQuery() {
         double radius = RADIUS;
